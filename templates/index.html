@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Instagram Fake Account Detection</title>
+</head>
+<body style="font-family: Arial; background-color:#f2f2f2; padding:20px;">
+
+    <h2>Instagram Fake Account Detection</h2>
+
+    <form method="POST">
+        Has Profile Pic (1/0): <input type="number" name="has_profile_pic"><br><br>
+        Bio Length: <input type="number" name="bio_length"><br><br>
+        Username Randomness: <input type="number" step="0.01" name="username_randomness"><br><br>
+        Followers: <input type="number" name="followers"><br><br>
+        Following: <input type="number" name="following"><br><br>
+        Follower/Following Ratio: <input type="number" step="0.01" name="follower_following_ratio"><br><br>
+        Account Age (days): <input type="number" name="account_age_days"><br><br>
+        Posts: <input type="number" name="posts"><br><br>
+        Posts per Day: <input type="number" step="0.01" name="posts_per_day"><br><br>
+        Caption Similarity Score: <input type="number" step="0.01" name="caption_similarity_score"><br><br>
+        Content Similarity Score: <input type="number" step="0.01" name="content_similarity_score"><br><br>
+        Follow-Unfollow Rate: <input type="number" step="0.01" name="follow_unfollow_rate"><br><br>
+        Spam Comments Rate: <input type="number" step="0.01" name="spam_comments_rate"><br><br>
+        Generic Comment Rate: <input type="number" step="0.01" name="generic_comment_rate"><br><br>
+        Suspicious Links in Bio (1/0): <input type="number" name="suspicious_links_in_bio"><br><br>
+        Verified (1/0): <input type="number" name="verified"><br><br>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    <h3>{{ result }}</h3>
+
+</body>
+</html>
