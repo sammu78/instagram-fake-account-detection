@@ -1,0 +1,4 @@
+__pycache__/
+*.pkl
+.env
+fake_social_media.csv
